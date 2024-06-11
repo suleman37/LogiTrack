@@ -1,0 +1,12 @@
+.review {
+  padding: 20px;
+}
+#name {
+  width: 100%;
+}
+.re-cent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

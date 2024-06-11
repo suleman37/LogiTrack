@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.hero-bg {
+  background-image: linear-gradient(rgba(0,0,0,0.2) , rgba(0,0,0,0.5)) , url(../Assets//shay-5n2EemBYQm4-unsplash.jpg);
+  width: auto;
+  height: 95vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.f-center{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    height: 90vh;
+    color: white;
+}
+.font{
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px #555;
+}
+.font1{
+  /* font-size: 60px; */
+  font-weight: bold;
+  text-shadow: 5px 5px 5px #555;
+}

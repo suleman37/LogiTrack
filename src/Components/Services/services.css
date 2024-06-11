@@ -1,0 +1,16 @@
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.para{
+    color: #555;
+    text-align: center;
+}
+.service-center{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-around;
+}

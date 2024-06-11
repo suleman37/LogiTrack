@@ -1,0 +1,10 @@
+.gray{
+    color: #555;
+}
+.ceo-pic{
+    box-shadow: 5px 5px 5px rgb(78, 78, 78);
+    margin-top: 20px;
+}
+.gap{
+    gap: 24px;
+}

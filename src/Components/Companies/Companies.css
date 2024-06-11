@@ -1,0 +1,21 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    padding: 10px; 
+  }
+  .card-slider {
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .mt {
+    margin-top: 80px;
+  }
+  .com-img {
+    border: 1px solid black;
+    width: 100px;
+    height: 60px;
+    padding: 5px;
+  }

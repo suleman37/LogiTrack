@@ -1,0 +1,21 @@
+.contract{
+    background: url(../Assets/seb-creativo-3jG-UM8IZ40-unsplash.jpg);
+    width: auto;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#name{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .font{
+        font-size: 35px;
+    }
+    #tpe{
+        width: 200px;
+    }
+}
