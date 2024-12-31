@@ -1,70 +1,83 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from 'react-bootstrap';
+import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import Logo from "../Assets/pak-logo.png";
-import Story from "../Assets/tpe.pdf"
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          <img src={Logo} alt="Pak Logo" width={"120px"} />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="mini" aria-current="page" href="#Hero">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="mini" href="#About Us">
-                About Us
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="mini" href="#Our Services">
-                Our Services
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="mini" href="#Our Team">
-                Our Team
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="mini" href="#Contact Us">
-                Contact Us
-              </a>
-            </li>
-          </ul>
-          <form className="d-flex fix">
-            <Button
-            className="btn-1"
-            type="submit"
-            variant="secondary"
-            href={`${Story}`}
-            download="The PakEnterprises.pdf"
-          >
-            <b>Our Profile</b>
+    <header>
+      <div className="bg-gradient py-3 border-bottom">
+        <div className="container-fluid d-flex justify-content-between align-items-center">
+          <div className="d-flex align-items-center">
+            <a href="mailto:info@elexoft.com" className="contact-info me-4 text-dark text-decoration-none">
+              <FaEnvelope className="me-2" /> info@thepakenterprises.com
+            </a>
+            <span className="divider mx-2">|</span>
+            <a href="tel:+923315062911" className="contact-info me-4 text-dark text-decoration-none">
+              <FaPhoneAlt className="me-2" /> +92 331 12345678
+            </a>
+            <span className="divider mx-2">|</span>
+            <a href="tel:+923008888888" className="contact-info text-dark text-decoration-none">
+              <FaPhoneAlt className="me-2" /> +92 300 8888888
+            </a>
+          </div>
+          <Button className="btn btn-danger text-white rounded-pill" type="button" href="#GetQuote" style={{ backgroundColor: 'red', color: 'white' }}>
+           <b> Get a Free Quote</b>
           </Button>
-          </form>
         </div>
       </div>
-    </nav>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+        <div className="container-fluid">
+          <a className="navbar-brand d-flex align-items-center" href="/">
+            <img src={Logo} alt="Elexoft Logo" width={"120px"} className="me-3" />
+          </a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style={{ backgroundColor: 'red' }}>
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link text-light" href="#Home">
+                  Home
+                </a>
+              </li>
+              <span className="divider mx-2">|</span>
+              <li className="nav-item">
+                <a className="nav-link text-light" href="#Services">
+                  Services
+                </a>
+              </li>
+              <span className="divider mx-2">|</span>
+              <li className="nav-item">
+                <a className="nav-link text-light" href="#Blog">
+                  Blog
+                </a>
+              </li>
+              <span className="divider mx-2">|</span>
+              <li className="nav-item">
+                <a className="nav-link text-light" href="#Portfolio">
+                  Portfolio
+                </a>
+              </li>
+              <span className="divider mx-2">|</span>
+              <li className="nav-item">
+                <a className="nav-link text-light" href="#Team">
+                  Team
+                </a>
+              </li>
+              <span className="divider mx-2">|</span>
+              <li className="nav-item">
+                <a className="nav-link text-light" href="#Contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
   );
 };
 

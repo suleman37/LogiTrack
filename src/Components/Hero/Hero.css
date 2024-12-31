@@ -1,31 +1,73 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
+
 .hero-bg {
-  background-image: linear-gradient(rgba(0,0,0,0.2) , rgba(0,0,0,0.5)) , url(../Assets//shay-5n2EemBYQm4-unsplash.jpg);
-  width: auto;
+  background-image: 
+    linear-gradient(to bottom right, rgba(0,0,0,0.3), rgba(0,0,0,0.7)), 
+    url(../Assets/industrial-port-container-yard.jpg),
+    url(../Assets/logistics-transportation-container-cargo-ship-cargo-plane-with-working-crane-bridge-shipyard-sunrise-logistic-import-export-transport-industry-background-ai-generative.jpg),
+    radial-gradient(circle, rgba(255,255,255,0.1), rgba(0,0,0,0.5));
+  width: 100%;
   height: 95vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center, center, center, center;
+  background-size: cover, cover, cover, cover;
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 2s ease-in-out;
 }
-.f-center{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-    height: 90vh;
-    color: white;
+
+.f-center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  height: 90vh;
+  color: #f0f0f0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  animation: slideUp 1.5s ease-out;
 }
-.font{
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 5px 5px 5px #555;
+
+.font {
+  font-size: 64px;
+  font-weight: 700;
+  text-shadow: 3px 3px 6px #333;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  animation: zoomIn 1s ease-in;
 }
-.font1{
-  /* font-size: 60px; */
-  font-weight: bold;
-  text-shadow: 5px 5px 5px #555;
+
+.font1 {
+  font-size: 28px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px #333;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  animation: fadeInLeft 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeInLeft {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
 }

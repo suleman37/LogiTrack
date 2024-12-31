@@ -8,15 +8,15 @@ import "animate.css";
 const second = () => {
   return (
     <>
-      <LazyLoad  offset={10} once>
-        <Container className="mar-top" id="About Us">
+      <LazyLoad offset={10} once>
+        <Container className="mar-top stylish-container" id="About Us">
           <Row>
-            <Col lg={6} className="animate__animated animate__backInLeft">
-              <h5 className="fanta red">INTERNATIONAL</h5>
-              <h4 className="fanta">TRANSPORT COMPANY</h4>
-              <div className="hr" style={{ height: "4px" }} />
+            <Col lg={6} className="animate__animated animate__fadeInLeft">
+            <h5 className="fanta red stylish-heading">INTERNATIONAL</h5>
+            <h4 className="fanta stylish-subheading">TRANSPORT COMPANY</h4>
+              <div className="hr stylish-divider" />
               <br />
-              <p>
+              <p className="stylish-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a
                 velit pharetra, consectetur quam vitae, scelerisque mauris.
                 Fusce in nisl ut tellus elementum aliquam. Vivamus feugiat augue
@@ -34,9 +34,11 @@ const second = () => {
             </Col>
             <Col
               lg={6}
-              className="justify-content-center animate__animated animate__backInRight"
+              className="justify-content-center animate__animated animate__fadeInRight"
             >
-              <img src={Truck} alt="" className="tk-img" />
+              <div className="image-container">
+                <img src={Truck} alt="Truck" className="tk-img stylish-image" />
+              </div>
             </Col>
           </Row>
         </Container>

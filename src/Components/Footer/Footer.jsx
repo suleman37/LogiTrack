@@ -6,7 +6,6 @@ import Phone from "../Assets/phone.png"
 import email from "../Assets/email.png"
 import location from "../Assets/location.png"
 
-
 const Footer = () => {
   return (
     <>
@@ -15,7 +14,7 @@ const Footer = () => {
         <Row>
             <Col md={4}>
             <img src={Logo} alt="" width={"200px"}/>
-            <p className='gray'>The Pak Enterprises is a global supplier of transport and logistics solutions.</p>
+            <p className='white'>The Pak Enterprises is a global supplier of transport and logistics solutions.</p>
             </Col>
             <Col md={4}>
             <h3 className='white'>Head Office</h3>

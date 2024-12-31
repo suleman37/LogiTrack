@@ -1,34 +1,57 @@
 .fanta {
-  font-family: fantasy;
-  color: black;
+  font-family: 'Poppins', sans-serif;
+  color: #1a1a2e;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
+
 .red {
-  color: red;
+  color: #d90429;
 }
+
 .hr {
-  border: 1px solid red;
-  width: 60px;
+  border: none;
+  height: 4px;
+  width: 120px;
   border-radius: 25px;
-  background: red;
+  background: linear-gradient(90deg, #d90429, #2b2d42);
+  margin: 20px 0;
 }
+
 .mar-top {
-  margin-top: 90px;
+  margin-top: 60px;
 }
+
 .tk-img {
-  box-shadow: -15px -10px 0px #555;
-  height: 400px;
-  width: 400px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+  height: auto;
+  width: 100%;
+  max-width: 450px;
+  height: 120%;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-.justify-content-center{
-    justify-content: center;
-    display: flex;
+
+.tk-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
 }
+
+.justify-content-center {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+
 @media only screen and (max-width: 990px) {
   .tk-img {
-    height: 300px;
-    width: 300px;
+    max-width: 320px;
   }
   .mar-top {
-    margin-top: 40px;
+    margin-top: 30px;
+    padding: 20px;
   }
 }
