@@ -67,14 +67,14 @@ const Hero = () => {
                     Welcome to
                   </Typography>
                   <Typography
-                    variant="h1"
+                    variant="h3"
                     sx={{
                       fontWeight: "bold",
                       textAlign: "left",
                       textTransform: "uppercase",
                     }}
                   >
-                    The Pak
+                    The PakEnterprises
                   </Typography>
                   <Typography
                     variant="h6"
