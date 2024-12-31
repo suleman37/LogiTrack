@@ -61,7 +61,7 @@ const Hero = () => {
                       fontWeight: "bold",
                       textAlign: "left",
                       textTransform: "uppercase",
-                      color: "#FF0000",
+                      color: "#ff5722",
                     }}
                   >
                     Welcome to

@@ -1,50 +1,62 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import "./second.css";
-import Truck from "../Assets/truck3.jpg";
-import LazyLoad from "react-lazyload";
-import "animate.css";
+import { Box, Button, TextField, Typography, Card, CardContent, Grid } from "@mui/material";
+import { CheckCircleOutline, LocalShipping, AccessTime } from "@mui/icons-material";
+import Img from "../Assets/truck-logistics-operation-dusk.jpg";
 
-const second = () => {
+const TrackingSection = () => {
   return (
-    <>
-      <LazyLoad offset={10} once>
-        <Container className="mar-top stylish-container" id="About Us">
-          <Row>
-            <Col lg={6} className="animate__animated animate__fadeInLeft">
-            <h5 className="fanta red stylish-heading">INTERNATIONAL</h5>
-            <h4 className="fanta stylish-subheading">TRANSPORT COMPANY</h4>
-              <div className="hr stylish-divider" />
-              <br />
-              <p className="stylish-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a
-                velit pharetra, consectetur quam vitae, scelerisque mauris.
-                Fusce in nisl ut tellus elementum aliquam. Vivamus feugiat augue
-                vel pellentesque sagittis. Sed at commodo elit. Mauris sit amet
-                urna volutpat nunc ornare ullamcorper. Etiam neque metus, cursus
-                id tincidunt in, cursus ut orci. Proin lobortis cursus justo,
-                tincidunt egestas elit molestie nec. Ut justo eros, ultricies ac
-                fermentum quis, pretium sed lorem. Pellentesque erat leo, semper
-                ut ex quis, dictum consectetur lorem.
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a
-                velit pharetra, consectetur quam vitae, scelerisque
-                mauris.scelerisque mauris.scelerisque mauris.
-              </p>
-            </Col>
-            <Col
-              lg={6}
-              className="justify-content-center animate__animated animate__fadeInRight"
-            >
-              <div className="image-container">
-                <img src={Truck} alt="Truck" className="tk-img stylish-image" />
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </LazyLoad>
-    </>
+    <Box sx={{ backgroundColor: "#f5f5f5", padding: "3rem", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "flex-start",
+          marginBottom: "3rem",
+          width: "85%",
+          backgroundColor: "#ffffff",
+          borderRadius: "12px",
+          boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
+          padding: "2rem",
+        }}
+      >
+        {/* Image Section */}
+        <Box sx={{ width: "30%", textAlign: "right", marginRight: "1.5rem" }}>
+          <img
+            src={Img}
+            alt="Transportation"
+            style={{ maxWidth: "100%", height: "auto", boxShadow: "0px 6px 15px rgba(0, 0, 0, 0.2)", borderRadius: "12px" }}
+          />
+        </Box>
+
+        {/* Text Content */}
+        <Box sx={{ width: "65%", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+          <Typography variant="h3" sx={{ color: "#333", fontWeight: "bold", fontFamily: "Arial, sans-serif" }}>
+            Experience the Pinnacle of{" "}
+            <span style={{ color: "#ff5722" }}>Transportation</span> Services
+          </Typography>
+          <Typography sx={{ color: "#444", marginTop: "1rem", fontFamily: "Arial, sans-serif" }}>
+            Our services are designed to move you forward with ease and efficiency. We ensure that every journey is smooth and hassle-free.
+          </Typography>
+          <Typography sx={{ color: "#444", marginTop: "1rem", fontFamily: "Arial, sans-serif" }}>
+            With our state-of-the-art logistics, we connect you to the world, making your travel and transport needs seamless and reliable.
+          </Typography>
+          <Box sx={{ marginTop: "1.5rem", display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+            <Box sx={{ display: "flex", alignItems: "center", marginBottom: "0.75rem" }}>
+              <CheckCircleOutline sx={{ color: "#ff5722", fontSize: "2.5rem", marginRight: "0.75rem" }} />
+              <Typography sx={{ color: "#333", fontSize: "1.5rem", fontFamily: "Arial, sans-serif" }}>Reliable Service</Typography>
+            </Box>
+            <Box sx={{ display: "flex", alignItems: "center", marginBottom: "0.75rem" }}>
+              <LocalShipping sx={{ color: "#ff5722", fontSize: "2.5rem", marginRight: "0.75rem" }} />
+              <Typography sx={{ color: "#333", fontSize: "1.5rem", fontFamily: "Arial, sans-serif" }}>Fast Delivery</Typography>
+            </Box>
+            <Box sx={{ display: "flex", alignItems: "center", marginBottom: "0.75rem" }}>
+              <AccessTime sx={{ color: "#ff5722", fontSize: "2.5rem", marginRight: "0.75rem" }} />
+              <Typography sx={{ color: "#333", fontSize: "1.5rem", fontFamily: "Arial, sans-serif" }}>24/7 Support</Typography>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 
-export default second;
+export default TrackingSection;

@@ -23,15 +23,16 @@ const Navbar = () => {
               <FaPhoneAlt className="me-2" /> +92 300 8888888
             </a>
           </div>
-          <Button className="btn btn-danger text-white rounded-pill" type="button" href="#GetQuote" style={{ backgroundColor: 'red', color: 'white' }}>
-           <b> Get a Free Quote</b>
+          <Button className="btn text-white" type="button" href="#GetQuote" style={{ backgroundColor: '#ff5722', color: 'white' , border:"1px solid #ff5722"}}>
+           <b>Our Profile</b>
           </Button>
         </div>
       </div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
         <div className="container-fluid">
-          <a className="navbar-brand d-flex align-items-center" href="/">
-            <img src={Logo} alt="Elexoft Logo" width={"120px"} className="me-3" />
+          <a className="navbar-brand d-flex flex-column align-items-center" href="/">
+            <img src={Logo} alt="Logo" width={"120px"} className="mb-2" />
+            <p className="mb-0"><b>The PakEnterprises</b></p>
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style={{ backgroundColor: 'red' }}>
             <span className="navbar-toggler-icon"></span>

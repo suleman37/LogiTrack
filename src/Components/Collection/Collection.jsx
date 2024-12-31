@@ -14,13 +14,13 @@ const Collection = () => {
   return (
     <>
       <Hero/>
-      <Second/>
-      <Services/>
-      <Choice/>
-      <Team/>
       <Contract/>
+      <Services/>
+      <Second/>
+      <Choice/>
+      {/* <Team/>
       <Contact/>
-      <Companies/>
+      <Companies/> */}
     </>
   )
 }
