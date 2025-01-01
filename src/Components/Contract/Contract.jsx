@@ -5,6 +5,7 @@ import AssignmentReturnIcon from '@mui/icons-material/AssignmentReturn';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
+import AsphaltLandscape from '../Assets/asphalt-landscape.jpg'; // Import the image
 
 const LogisticsSection = () => {
   return (
@@ -202,13 +203,13 @@ const LogisticsSection = () => {
           <Paper
             sx={{
               height: '100%',
-              backgroundImage: 'url(../Assets/asphalt-landscape.jpg)',
+              backgroundImage: `url(${AsphaltLandscape})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               borderRadius: '8px',
               minHeight: '400px',
             }}
-          ></Paper>
+          />
         </Grid>
       </Grid>
     </Box>

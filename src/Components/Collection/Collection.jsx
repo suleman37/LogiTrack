@@ -18,9 +18,9 @@ const Collection = () => {
       <Services/>
       <Second/>
       <Choice/>
-      {/* <Team/>
+      <Team/>
       <Contact/>
-      <Companies/> */}
+      {/* <Companies/> */}
     </>
   )
 }

@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from 'react-bootstrap';
 import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import Logo from "../Assets/pak-logo.png";
-import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -31,8 +30,8 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
         <div className="container-fluid">
           <a className="navbar-brand d-flex flex-column align-items-center" href="/">
-            <img src={Logo} alt="Logo" width={"120px"} className="mb-2" />
-            <p className="mb-0"><b>The PakEnterprises</b></p>
+            {/* <img src={Logo} alt="Logo" width={"120px"} className="mb-2" /> */}
+            <p className="mb-0"><b>The <span style={{color:"#ff5722"}}>Pak</span>Enterprises</b></p>
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style={{ backgroundColor: 'red' }}>
             <span className="navbar-toggler-icon"></span>
