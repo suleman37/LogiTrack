@@ -9,7 +9,7 @@ import location from "../Assets/location.png"
 const Footer = () => {
   return (
     <>
-      <Container fluid style={{ backgroundColor: "#212529", paddingTop: "50px", paddingBottom: "50px" }}>
+      <Container fluid style={{ backgroundColor: "#212529", paddingTop: "50px", paddingBottom: "10px" }}>
         <Container>
         <Row>
             <Col md={4}>
@@ -53,10 +53,16 @@ const Footer = () => {
             </div>
             </Col>
         </Row>
+        <hr style={{ borderColor: "white", marginTop: "30px", marginBottom: "30px" }} />
+        <Row>
+          <Col className="text-center">
+            <p className='white'>© 2025 Designed and Developed by Suleman Shakeel</p>
+          </Col>
+        </Row>
         </Container>
       </Container>
     </>
   )
 }
 
-export default Footer
+export default Footer;

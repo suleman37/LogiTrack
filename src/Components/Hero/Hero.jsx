@@ -45,7 +45,7 @@ const Hero = () => {
               left: 0,
               width: "60%",
               height: "100%",
-              backgroundColor: "rgba(0, 0, 0, 0.7)",
+              backgroundColor: "rgba(0, 0, 0, 0.8)",
               zIndex: 1,
               clipPath: "polygon(0 0, 100% 0, 60% 100%, 0% 100%)",
               display: "flex",

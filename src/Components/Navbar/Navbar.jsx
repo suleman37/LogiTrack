@@ -23,7 +23,7 @@ const Navbar = () => {
             </a>
           </div>
           <Button className="btn text-white" type="button" href="#GetQuote" style={{ backgroundColor: '#ff5722', color: 'white' , border:"1px solid #ff5722"}}>
-           <b>Our Profile</b>
+           <b>Get a Quote</b>
           </Button>
         </div>
       </div>
@@ -43,31 +43,26 @@ const Navbar = () => {
                   Home
                 </a>
               </li>
-              <span className="divider mx-2">|</span>
               <li className="nav-item">
                 <a className="nav-link text-light" href="#Services">
                   Services
                 </a>
               </li>
-              <span className="divider mx-2">|</span>
               <li className="nav-item">
                 <a className="nav-link text-light" href="#Blog">
                   Blog
                 </a>
               </li>
-              <span className="divider mx-2">|</span>
               <li className="nav-item">
                 <a className="nav-link text-light" href="#Portfolio">
                   Portfolio
                 </a>
               </li>
-              <span className="divider mx-2">|</span>
               <li className="nav-item">
                 <a className="nav-link text-light" href="#Team">
                   Team
                 </a>
               </li>
-              <span className="divider mx-2">|</span>
               <li className="nav-item">
                 <a className="nav-link text-light" href="#Contact">
                   Contact
