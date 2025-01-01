@@ -1,70 +1,48 @@
-import React from 'react';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import icon_pk from "../Assets/westren-service.png";
-import save_money from "../Assets/Screenshot-2023-08-21-133145.png";
-import express from "../Assets/Screenshot-2023-08-21-133315.png";
-import expert from "../Assets/Screenshot-2023-08-21-133513.png";
-import online from "../Assets/1519904578831.jpeg";
-import karachi from "../Assets/karachi.png";
-import "./Companies.css";
+import React, { useState, useEffect } from "react";
+import { Box, Typography } from "@mui/material";
+import client1 from "../Assets/1519904578831.jpeg";
+import client2 from "../Assets/karachi.png";
+import client3 from "../Assets/Screenshot-2023-08-21-133145.png";
+import client4 from "../Assets/Screenshot-2023-08-21-133315.png";
+import client5 from "../Assets/Screenshot-2023-08-21-133513.png";
+import client6 from "../Assets/westren-service.png";
 
-const CardSlider = () => {
-  const settings = {
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 3,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
+const ClientsSection = () => {
+  const clients = [client1, client2, client3, client4, client5, client6];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 4) % clients.length);
   };
 
-  const cards = [
-    { id: 1,  icon: `${icon_pk}` },
-    { id: 2,  icon: `${save_money}` },
-    { id: 3,  icon: `${express}` },
-    { id: 4,  icon: `${expert}` },
-    { id: 5,  icon: `${online}` },
-    { id: 6,  icon: `${karachi}` },
-  ];
+  useEffect(() => {
+    const interval = setInterval(handleNext, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div className="card-slider mt">
-      <Slider {...settings}>
-        {cards.map((card) => (
-          <div className="center" key={card.id}>
-            <img src={card.icon} alt="" className="com-img" />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <Box sx={{ backgroundColor: "#f5f5f5", p: 3, display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
+      <Typography variant="h3" sx={{ color: "#333", fontWeight: "bold", fontFamily: "Arial, sans-serif", mb: 3 }}>
+        Our Clients
+      </Typography>
+      <Typography sx={{ color: "#444", mb: 3, fontFamily: "Arial, sans-serif", textAlign: "center" }}>
+        We are proud to have worked with some of the most renowned companies in the industry.
+      </Typography>
+      <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <Box sx={{ display: "flex", gap: 10 }}>
+          {clients.slice(currentIndex, currentIndex + 5).map((client, index) => (
+            <Box key={index} sx={{ width: "200px", textAlign: "center" }}>
+              <img
+                src={client}
+                alt={`Client ${currentIndex + index + 1}`}
+                style={{ width: "200px", height: "100px", boxShadow: "0px 6px 15px rgba(0, 0, 0, 0.2)", borderRadius: "12px" }}
+              />
+            </Box>
+          ))}
+        </Box>
+      </Box>
+    </Box>
   );
 };
 
-export default CardSlider;
+export default ClientsSection;

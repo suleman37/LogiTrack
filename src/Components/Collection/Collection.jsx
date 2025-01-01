@@ -20,7 +20,7 @@ const Collection = () => {
       <Choice/>
       <Team/>
       <Contact/>
-      {/* <Companies/> */}
+      <Companies/>
     </>
   )
 }

@@ -3,6 +3,13 @@ import { Box, Typography } from "@mui/material";
 import { CheckCircleOutline, LocalShipping, AccessTime } from "@mui/icons-material";
 import Img from "../Assets/truck-logistics-operation-dusk.jpg";
 
+import icon_pk from "../Assets/westren-service.png";
+import save_money from "../Assets/Screenshot-2023-08-21-133145.png";
+import express from "../Assets/Screenshot-2023-08-21-133315.png";
+import expert from "../Assets/Screenshot-2023-08-21-133513.png";
+import online from "../Assets/1519904578831.jpeg";
+import karachi from "../Assets/karachi.png";
+
 const TrackingSection = () => (
   <Box sx={{ backgroundColor: "#f5f5f5", p: 3, display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
     <Box

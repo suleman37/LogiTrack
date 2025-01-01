@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Footer.css";
 import { Container, Row, Col } from "react-bootstrap";
-import Logo from "../Assets/pak-logo.png";
+// import Logo from "../Assets/pak-logo.png";
 import Phone from "../Assets/phone.png"
 import email from "../Assets/email.png"
 import location from "../Assets/location.png"
@@ -9,11 +9,12 @@ import location from "../Assets/location.png"
 const Footer = () => {
   return (
     <>
-      <Container fluid className="footer-bg">
+      <Container fluid style={{ backgroundColor: "#212529", paddingTop: "50px", paddingBottom: "50px" }}>
         <Container>
         <Row>
             <Col md={4}>
-            <img src={Logo} alt="" width={"200px"}/>
+            {/* <img src={Logo} alt="" width={"200px"}/> */}
+            <h1 className="mb-0"><b style={{color :"white"}}>The <span style={{color:"#ff5722"}}>Pak</span>Enterprises</b></h1>
             <p className='white'>The Pak Enterprises is a global supplier of transport and logistics solutions.</p>
             </Col>
             <Col md={4}>
