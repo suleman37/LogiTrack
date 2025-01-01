@@ -20,7 +20,7 @@ const ContactUsSection = () => (
       <Box sx={{ width: { xs: "100%", md: "50%" }, textAlign: "center", mb: { xs: 3, md: 0 }, mr: { md: 2 } }}>
         <iframe
           title="Location Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537353153167!3d-37.81627977975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d1f9c1b1e0e!2sVictoria%20State%20Library!5e0!3m2!1sen!2sau!4v1611810193437!5m2!1sen!2sau"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.838287678123!2d73.0478843152103!3d33.68442098071092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf5e0f0f0f0f%3A0x0!2zMzPCsDQxJzA0LjAiTiA3M8KwMDInNTIuMyJF!5e0!3m2!1sen!2s!4v1611810193437!5m2!1sen!2s"
           width="100%"
           height="400px"
           style={{ border: 0, borderRadius: "15px" }}
